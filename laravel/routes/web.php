@@ -22,4 +22,6 @@ Route::get('/', function () {
 Route::get('/Client/Connexion',[ClientController::class,'ConnexionClient']);
 Route::post('/Client/Connecter',[ClientController::class,'ConnecterClient']);
 Route::get('/Client/Connecter', [ClientController::class, 'AfficherAccueil']);
+Route::post('/Client/Inscription', [ClientController::class, 'Inscription']);
+Route::get('/Client/Inscription', [ClientController::class, 'Formulaire']);
 Route::get('/Responsable/Programmer',[ClientController::class,'ProgrammerSejour']);
